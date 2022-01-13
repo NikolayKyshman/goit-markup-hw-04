@@ -444,14 +444,16 @@ body {
 }
 
 /* -----------------------------footer-------------------------- */
-footer {
+.footer {
   background-color: var(--first-background-color);
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer-container {
+  display: flex;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 }
+
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -482,6 +484,68 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.join {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--first-color);
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-list-conection {
+  margin-bottom: 9px;
+}
+
+.footer-adress {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--first-color);
+}
+
+.footer-list-icons {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.footer-social-icons + .footer-social-icons {
+  margin-left: 10px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--logo-and-active-color);
+}
+
+.footer-join {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-left: 70px;
 }
 
 /* ------------------------hero-----portfolio-----button------------------ */
@@ -578,17 +642,4 @@ footer {
 
   background: #ffffff;
   border: 1px solid #eeeeee;
-}
-
-.footer-list {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-logo {
-  margin-bottom: 20px;
-}
-
-.footer-list-conection {
-  margin-bottom: 9px;
 }
