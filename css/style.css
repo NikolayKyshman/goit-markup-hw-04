@@ -26,7 +26,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .header-container {
@@ -596,6 +596,15 @@ body {
   color: var(--first-color);
 }
 
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 2px 2px 0px #0000001f;
+
+  box-shadow: 0px 1px 2px 0px #00000014;
+
+  box-shadow: 0px 3px 1px 0px #0000001a;
+}
+
 .hero-title-portfolio {
   font-style: normal;
   font-weight: bold;
@@ -642,4 +651,14 @@ body {
 
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+.hero-post:hover,
+.hero-post:focus {
+  cursor: pointer;
+  box-shadow: 1px 4px 6px 0px #00000029;
+
+  box-shadow: 0px 4px 4px 0px #0000000f;
+
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
